@@ -1,3 +1,4 @@
+import 'package:bfpocket/pages/home.page.dart';
 import 'package:bfpocket/pages/sign-in.page.dart';
 import 'package:bfpocket/pages/recovery-password.page.dart';
 import 'package:flutter/material.dart';
@@ -130,7 +131,12 @@ class LoginPageState extends State<LoginPage> {
                       ),
                     ],
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomePage()),
+                    );
+                  },
                 ),
               ),
             ),

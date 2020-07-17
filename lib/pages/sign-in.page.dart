@@ -20,6 +20,8 @@ class _SignInPageState extends State<SignInPage> {
   var maskFormatterCelular = new MaskTextInputFormatter(
       mask: '(##) # ####-####', filter: {"#": RegExp(r'[0-9]')});
 
+  bool checkBoxValue = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -109,6 +111,94 @@ class _SignInPageState extends State<SignInPage> {
                   fontWeight: FontWeight.w400,
                 ),
               ),
+            ),
+            TextFormField(
+              inputFormatters: [maskFormatterCelular],
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                labelText: "Senha",
+                labelStyle: TextStyle(
+                  color: Colors.black38,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ),
+            TextFormField(
+              inputFormatters: [maskFormatterCelular],
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                labelText: "Confirmar Senha",
+                labelStyle: TextStyle(
+                  color: Colors.black38,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            Container(
+              alignment: Alignment.center,
+              child: Row(
+                //mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Checkbox(
+                    value: checkBoxValue,
+                    onChanged: (bool value) {
+                      setState(() {
+                        checkBoxValue = value;
+                      });
+                    },
+                  ),
+                  Text("Li e aceito os Termos de Condições e de Privacidade"),
+                ],
+              ),
+            ),
+            Text(
+              "Ler os Termos",
+              textAlign: TextAlign.center,
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              height: 5.0,
+            ),
+            Container(
+              height: 50,
+              alignment: Alignment.centerLeft,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  stops: [0.3, 1],
+                  colors: [
+                    Color(0xFF6eacf8),
+                    Color(0xFF72acf4),
+                  ],
+                ),
+                borderRadius: BorderRadius.all(Radius.circular(10)),
+              ),
+              child: SizedBox.expand(
+                child: FlatButton(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        "Registrar",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ],
+                  ),
+                  onPressed: () {},
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 20,
             ),
           ],
         ),
