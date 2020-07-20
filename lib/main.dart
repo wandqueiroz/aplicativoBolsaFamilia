@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'BFPocket',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: LoginPage(),

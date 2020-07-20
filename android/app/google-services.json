@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "854955207311",
+    "firebase_url": "https://bfapocket.firebaseio.com",
+    "project_id": "bfapocket",
+    "storage_bucket": "bfapocket.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854955207311:android:ad76f44269b36bdeee1efa",
+        "android_client_info": {
+          "package_name": "com.queiroz.bfpocket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854955207311-eql2rurauvdvqvhm1t7durhelithigja.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.queiroz.bfpocket",
+            "certificate_hash": "ad520752fffed252cb5b9d8d1add9be5dbc78470"
+          }
+        },
+        {
+          "client_id": "854955207311-b0ft46qedb1glafuaeq2u779lfgjmtng.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClR3fraz61qlgB21QmC_XEcxVrepZA4y4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854955207311-b0ft46qedb1glafuaeq2u779lfgjmtng.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

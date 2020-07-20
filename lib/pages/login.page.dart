@@ -97,15 +97,16 @@ class LoginPageState extends State<LoginPage> {
               width: double.infinity,
               alignment: Alignment.centerLeft,
               decoration: BoxDecoration(
-                gradient: LinearGradient(
+                /*gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   stops: [0.3, 1],
                   colors: [
-                    Color(0xFF6eacf8),
-                    Color(0xFF72acf4),
+                    Color(0xFF77AF8B),
+                    Color(0xFF5D9671),
                   ],
-                ),
+                ),*/
+                color: Colors.green,
                 borderRadius: BorderRadius.all(Radius.circular(10)),
               ),
               child: SizedBox.expand(
@@ -147,15 +148,16 @@ class LoginPageState extends State<LoginPage> {
               height: 60,
               alignment: Alignment.centerLeft,
               decoration: BoxDecoration(
-                gradient: LinearGradient(
+                /*gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   stops: [0.3, 1],
                   colors: [
-                    Color(0xFF4b7fbe),
-                    Color(0xFF2c507d),
+                    Color(0xFF065C4F),
+                    Color(0xFF064C4F),
                   ],
-                ),
+                ),*/
+                color: Colors.deepOrangeAccent,
                 borderRadius: BorderRadius.all(Radius.circular(10)),
               ),
               child: SizedBox.expand(
